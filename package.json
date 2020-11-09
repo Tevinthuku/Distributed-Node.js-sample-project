@@ -1,0 +1,23 @@
+{
+  "name": "dist-node",
+  "version": "1.0.0",
+  "description": "Distributed node project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Fake Tests\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tevinthuku/Distributed-Node.js-sample-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tevinthuku/Distributed-Node.js-sample-project/issues"
+  },
+  "homepage": "https://github.com/Tevinthuku/Distributed-Node.js-sample-project#readme",
+  "dependencies": {
+    "fastify": "^3.2.1"
+  }
+}
