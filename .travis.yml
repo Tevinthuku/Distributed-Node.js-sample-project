@@ -5,3 +5,11 @@ install:
   - npm install
 script:
   - PORT=0 npm test
+deploy:
+  provider: script
+  script: bash deploy-heroku.sh
+  on:
+    branch: main
+env:
+  global:
+    - secure: "S+kckMYXzaVIk6ED4faZXfoMzEfQx1tPgWQzZ0vn66MsmhwUd2vDopFy6b4gd5J++J1y9buLw4pFVLicxcivKLqxKZpFMhgul77GDUUR/bdBHoD1cGmZmzRBKG58I5bwsXuqSzd9pHh+u+7E1u0zes2ehr/x40Q79DpEy5nfeVJCRwDQ098z3RjI8xqkXLZftgc7Z+acXg2LiTQD9ZN5/yNWA+4ppYKWJ6oLEvzLJBA4ionTMEEcbU+dGVzVZQag774d2/5KpTEledw+7lyCpRfDo6p5KGI5AvPEsmw0WeVc6/akG3/ZUc2Ns94bUN65Rjj28j1LGfLMogvhAhJNVZpOVCX7XdtN3BWnPaDkjW4SlWd9ULte862lEj+nvPby0vSACZ/uE4GyStLzwtw0VBRq9gyiQ/wNgMOpQtbEp/qf+vx/O26P1JJFhaoGBY9Wv5w4hvOQPkqoRrM090Qxxvsog3CEXYm6O+V5elT5w2R/+sVUInyHOLamf4tHmoAOWYoALZOKfWsztpNBOHwt6SHV6T2X039Pwgu0O3VW37VLpfqp4KgACeKe2E2IU8Q52j7op0C7uQ1ys28vbywe+MHxUO7N5Ddm5UiaxEFvdjIKirM1ZVhIuzIi428Kj4ECutDujIaPOI/YyotzGKtEZWputki0VK5Wopz6FNjHbnc="
